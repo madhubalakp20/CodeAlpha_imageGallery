@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Nested Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Nested Gallery</h1>
+  </header>
+
+  <main>
+    <!-- Main Gallery -->
+    <section class="gallery">
+      <div class="gallery-item" data-category="forest">
+        <img src="https://i.natgeofe.com/n/9ac08f97-31b2-4083-b152-84a48fe95169/nationalgeographic_2723899.jpg" alt="Forest">
+        <div class="caption">
+          <h3>Forest</h3>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="beach">
+        <img src="https://maharashtratourism.gov.in/wp-content/uploads/2023/10/Kashid-Beach.jpg" alt="Beach">
+        <div class="caption">
+          <h3>Beach</h3>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="mountain">
+        <img src="https://img.freepik.com/free-photo/view-rock-formations-with-nature-landscape_23-2151723172.jpg?semt=ais_hybrid&w=740&q=80" alt="Mountain">
+        <div class="caption">
+          <h3>Mountain</h3>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="river">
+        <img src="https://media.istockphoto.com/id/154931594/photo/nez-perce-creek-in-yellowstone-national-park-at-sunset.jpg?s=612x612&w=0&k=20&c=U6o_x_XXY5YWcowPpci3HlHDzimjm2jUwKMnZTnmpz4=" alt="River">
+        <div class="caption">
+          <h3>River</h3>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="desert">
+        <img src="https://cdn.prod.website-files.com/5f58a077d654db1a689fd95b/60ab777e17b2c9be9058c96c_picfair-01350937-dunes-and-desert-landscape-of-namib-fu-PREVIEW-ONLY.jpg" alt="Desert">
+        <div class="caption">
+          <h3>Desert</h3>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="trees">
+        <img src="https://www.shrubhub.com/design/ufiles/blogs/766/cherry_tree_flowering_shrubhub_blog.jpg" alt="Trees">
+        <div class="caption">
+          <h3>Trees</h3>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img" src="" alt="">
+      <div class="lightbox-controls">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+        <button id="zoomIn">+</button>
+        <button id="zoomOut">-</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Nested Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
